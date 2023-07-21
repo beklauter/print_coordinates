@@ -1,0 +1,7 @@
+concommand.Add("show_coordinates", function(player, command, args)
+    local playerPosition = player:GetPos()
+    local roundedX = math.Round(playerPosition.x, 2)
+    local roundedY = math.Round(playerPosition.y, 2)
+    local roundedZ = math.Round(playerPosition.z, 2)
+    print("Koordinates: X = " .. roundedX .. ", Y = " .. roundedY .. ", Z = " .. roundedZ)
+end)
